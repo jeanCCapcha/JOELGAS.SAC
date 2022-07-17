@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+    background:rgb(0, 53, 129);
+    height: 90px;
+    width: 100%;
+}
+
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo {
+    height: 40px;
+}
+
+header ul {
+    float: right;
+    margin-right: 200px;
+
+}
+
+header ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+header ul li a {
+    color: white;
+    font-size: 15px;
+    padding: 7px 13px;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li a.active,
+li a:hover {
+    background: cornflowerblue;
+    transition: .5s;
+}
+
+.btn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.as {
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+@media(max-width:952px) {
+
+    .enlace {
+        padding-left: 20px;
+    }
+
+    header ul li {
+        font-size: 16px;
+
+    }
+}
+
+@media(max-width:858px) {
+
+    .btn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: darkslategrey;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    header ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    header ul li a {
+        font-size: 20px;
+    }
+
+    li a:hover,
+    li a.active {
+        background: none;
+        color: skyblue;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+}
+
+/* HEADER */
+/* portada */
+.portada{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to right, rgb(0 0 0 / .75),
+     rgb(0 0 0 / .75)), url(img/panoramica2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.portadauno{
+    width: 30%;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 40px;
+}
+.portadados table{
+    border:  8px;
+    width:400px;
+    height: 450px;
+}
+/* portada */
+
+nav h1{
+    text-align: center;
+    font-size: 50px;
+    margin: 100px 0 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 53, 129);
+}
+hr{
+    max-width: 80px;
+    margin: 0 auto;
+    background-color:  rgb(76, 199, 76);
+    padding: 1px;
+    border: 0 solid white;
+    margin-bottom: 100px;
+}
+.section {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+   max-width: 900px;
+   margin-bottom: 3rem;
+   justify-content: center;
+   align-items: center;
+}
+.en{
+    padding: 1rem;
+    background-color: rgb(76, 199, 76);
+    border-radius: 1rem;
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;  
+}
+
+.section article .img{
+    margin-bottom: 22px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+/*  */
+
+.uno{
+   width: 305px;
+   margin-left: 30px;
+    
+}
+.as{
+    text-align: center;
+    width: 305px;
+    height: 110px;
+    margin-top: 20px;
+}
+.as h2{
+    color: rgb(0, 53, 129);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.experiencia{
+    display: flex;
+    flex-wrap: wrap;
+   margin-bottom: 5rem;
+   justify-content: center;       
+   align-items: center;
+}
+/* 
+ */
+ footer{
+     padding: 2rem 0 10px;
+     background-color: rgb(0, 53, 129);
+     border-top:  rgb(43, 190, 43) solid 7px;
+ }
+ .pie{
+     display: flex;
+     margin: 0 auto;
+     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+ }
+ .zx{
+     padding: 10px;
+     border-radius: 10px;
+     background-color: white;
+     width: 85px;
+     margin-bottom: 20px;
+ }
+ footer h1{
+    color: white;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+ }
+ .ic{
+    padding: 100px;
+    /* background-color: aqua; */
+    border-radius: 1rem;
+    margin-right: 49px;
+ }
+.ic p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.po{
+    margin-bottom: 20px;
+}
+/*  */
+.logo{
+    border-radius: 10px;
+}
